@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ButtonStyleTransparent" parent="Widget.AppCompat.Button">
+
+        <item name="android:textColor">@color/black</item>
+<!--        <item name="android:radius">120dp</item>-->
+        <item name="android:backgroundTint">@color/white</item>
+<!--        <item name="android:textSize">16sp</item>-->
+    </style>
+
+    <style name="Widget.MyApp.Chip.Choice" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/white</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipStrokeColor">#272727</item>
+        <item name="android:textSize">18sp</item>
+<!--        <item name="shapeAppearanceOverlay">?attr/shapeAppearanceSmallComponent</item>-->
+    </style>
+    <style name="searchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="android:background">@drawable/search_view_background</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="Widget.App.Tooltip" parent="Widget.MaterialComponents.Tooltip">
+        <item name="android:textAppearance">@style/Widget.App.Tooltip</item>
+        <item name="backgroundColor">@color/grey_subtitle</item>
+        <item name="android:layout_height">2dp</item>
+    </style>
+
+    <style name="collectionFrameStyle" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="strokeWidth">1dp</item>
+        <item name="android:strokeColor">@color/black</item>
+    </style>
+    <style name="ThemeOverlay.App.BottomNavigationView" parent="">
+
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/grey_search</item>
+    </style>
+    
+
+
+</resources>

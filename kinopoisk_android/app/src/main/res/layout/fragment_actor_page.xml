@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".presentation.HomePages.homePage.ActorPageFragment">
+    <FrameLayout
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:background="@color/grey_subtitle">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/outline_int"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/chevron_left_24px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="42dp"/>
+
+    <ImageView
+        android:id="@+id/image_actor_page"
+        android:layout_width="146dp"
+        android:layout_height="201dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="98dp"
+        android:background="@color/grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:text="@string/all"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_actor_page"
+        app:layout_constraintTop_toTopOf="@+id/image_actor_page" />
+
+    <TextView
+        android:id="@+id/text_descr"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:text="@string/all"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_name"
+        app:layout_constraintStart_toStartOf="@+id/text_name"
+        app:layout_constraintTop_toBottomOf="@+id/text_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="85dp"/>
+
+
+    <TextView
+        android:id="@+id/text_actor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="45dp"
+        android:text="@string/best"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_actor_page" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:text="@string/all"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/text_actor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_actor" />
+
+    <RelativeLayout
+        android:id="@+id/bestAll"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="26dp"
+        android:background="@drawable/chevron_right_24px"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_actor_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_actor" />
+
+    <TextView
+        android:id="@+id/text_filmography"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/filmography"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_actor_page" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/count_films"
+        android:textColor="@color/grey_subtitle"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/text_filmography"
+        app:layout_constraintTop_toBottomOf="@+id/text_filmography" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:text="@string/to_the_list"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/text_filmography"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_filmography" />
+
+    <RelativeLayout
+        android:id="@+id/allFilmography"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="26dp"
+        android:background="@drawable/chevron_right_24px"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

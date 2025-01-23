@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.search.SearchSettingsFragment">
+
+    <ImageView
+        android:id="@+id/outline_int"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/chevron_left_24px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="42dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_search"
+        android:textColor="@color/title_black"
+        android:textSize="12sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/outline_int"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/outline_int" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/show"
+        android:textColor="@color/grey_subtitle"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/outline_int"
+        app:layout_constraintTop_toBottomOf="@+id/outline_int" />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_all"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_films"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/films" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_serial"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/serial" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <TextView
+        android:id="@+id/button_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="30dp"
+        android:text="Страна"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton" />
+
+    <TextView
+        android:id="@+id/text_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:text="Россия"
+        android:textColor="@color/grey_subtitle"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button_country"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_country" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/grey_subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/button_country" />
+
+
+    <TextView
+        android:id="@+id/button_genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:text="Жанр"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/text_genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:text="Комедия"
+        android:textColor="@color/grey_subtitle"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button_genre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_genre" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/grey_subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/button_genre" />
+
+    <TextView
+        android:id="@+id/button_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp"
+        android:text="Год"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/text_yearBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:text="@string/by_value"
+        android:textColor="@color/grey_subtitle"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button_year"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_year" />
+
+    <TextView
+        android:id="@+id/text_yearWidth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="@string/width_value"
+        android:textColor="@color/grey_subtitle"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button_year"
+        app:layout_constraintEnd_toStartOf="@+id/text_yearBy"
+        app:layout_constraintTop_toTopOf="@+id/button_year"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/grey_subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/button_year" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp"
+        android:text="Рэйтинг"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <TextView
+        android:id="@+id/text_rating_width"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:text="любой"
+        android:textColor="@color/grey_subtitle"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/rangeSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="26dp"
+        android:valueFrom="0.0"
+        android:valueTo="10.0"
+        app:labelBehavior="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:thumbColor="@color/white"
+        app:thumbHeight="24dp"
+        app:thumbRadius="20dp"
+        app:thumbStrokeColor="@color/black"
+        app:thumbStrokeWidth="1dp"
+        app:thumbWidth="24dp"
+        app:trackColorActive="@color/blue"
+        app:trackColorInactive="@color/grey_subtitle"
+        app:trackHeight="4dp"
+        app:values="@array/rangeSliderValues" />
+
+    <TextView
+        android:id="@+id/value_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey_subtitle"
+        app:layout_constraintStart_toStartOf="@+id/rangeSlider"
+        app:layout_constraintTop_toBottomOf="@+id/rangeSlider" />
+
+    <TextView
+        android:id="@+id/value_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey_subtitle"
+        app:layout_constraintEnd_toEndOf="@+id/rangeSlider"
+        app:layout_constraintTop_toBottomOf="@+id/rangeSlider" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/grey_subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/value_one" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/sorted"
+        android:textColor="@color/grey_subtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/buttons_sorted"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_date"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_popular"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/populare" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_rating"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rating_search" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/grey_subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/buttons_sorted" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/hide"
+        android:layout_marginStart="28dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/visibility_togle_black"
+        android:padding="8dp"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="@string/on_viewed"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/hide"
+        app:layout_constraintStart_toEndOf="@+id/hide"
+        app:layout_constraintTop_toTopOf="@+id/hide" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".presentation.search.SearchSettingYearFragment">
+
+    <ImageView
+        android:id="@+id/outline_int"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/chevron_left_24px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="42dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Период"
+        android:textColor="@color/title_black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/outline_int"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/outline_int" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Искать в период с"
+        android:textColor="@color/grey_subtitle"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="308dp"
+        android:layout_height="224dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/date_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/_1980_2024"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/button_next_one"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="6dp"
+            android:src="@drawable/chevron_right_24px"
+            app:layout_constraintBottom_toBottomOf="@+id/text_date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_date" />
+
+        <ImageView
+            android:id="@+id/button_down_one"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/chevron_left_24px"
+            app:layout_constraintBottom_toBottomOf="@+id/text_date"
+            app:layout_constraintEnd_toStartOf="@+id/button_next_one"
+            app:layout_constraintTop_toTopOf="@+id/text_date" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerDate"
+            android:layout_width="240dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Искать в период до"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/grey_subtitle"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="308dp"
+        android:layout_height="224dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/date_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+        <TextView
+            android:id="@+id/text_date_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/_1980_2024"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/button_next_two"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="6dp"
+            android:src="@drawable/chevron_right_24px"
+            app:layout_constraintBottom_toBottomOf="@+id/text_date_two"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_date_two" />
+
+        <ImageView
+            android:id="@+id/button_down_two"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/chevron_left_24px"
+            app:layout_constraintBottom_toBottomOf="@+id/text_date_two"
+            app:layout_constraintEnd_toStartOf="@+id/button_next_two"
+            app:layout_constraintTop_toTopOf="@+id/text_date_two" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerDateTwo"
+            android:layout_width="240dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button_choose"
+        android:layout_width="125dp"
+        android:layout_height="36dp"
+        android:text="@string/choose"
+        android:backgroundTint="@color/blue"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

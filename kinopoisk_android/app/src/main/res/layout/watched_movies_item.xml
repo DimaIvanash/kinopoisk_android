@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="111dp"
+    android:padding="4dp"
+    android:layout_height="224dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/image_watched_film"
+        android:layout_width="111dp"
+        android:layout_height="166dp"
+        android:background="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/visibility_black"
+        android:visibility="invisible"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/title_name_watched_film"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:padding="2dp"
+        android:text="текст"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_watched_film" />
+
+
+    <ImageButton
+        android:id="@+id/clear_button"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:background="@drawable/shape_last_button"
+        android:src="@drawable/delete_24px"
+        android:visibility="invisible"
+        android:shadowColor="@color/black"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_watched_film"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_clear"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="@string/clean_history"
+        android:visibility="invisible"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/clear_button"
+        app:layout_constraintStart_toStartOf="@+id/clear_button"
+        app:layout_constraintTop_toBottomOf="@+id/clear_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

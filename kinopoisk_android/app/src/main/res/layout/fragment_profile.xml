@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".presentation.profile.ProfileFragment">
+
+    <TextView
+        android:id="@+id/title_viewed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="@string/viewed"
+        android:textSize="18sp"
+        android:textColor="@color/title_black"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/button_all_one"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="28dp"
+            android:src="@drawable/chevron_right_24px"
+            app:layout_constraintBottom_toBottomOf="@+id/all_viewed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/all_viewed" />
+
+    <TextView
+        android:id="@+id/all_viewed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:text="@string/all"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/title_viewed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/title_viewed" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_viewed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/title_viewed" />
+
+    <TextView
+        android:id="@+id/title_collections"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/collections"
+        android:textSize="18sp"
+        android:textColor="@color/title_black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_viewed" />
+
+    <ImageView
+        android:id="@+id/create_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add_24px"
+        android:layout_marginStart="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/create_collections"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/create_collections" />
+
+    <TextView
+        android:id="@+id/create_collections"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="15dp"
+        android:text="@string/create_collection"
+        android:textSize="16sp"
+        android:textColor="@color/title_black"
+        app:layout_constraintStart_toEndOf="@+id/create_plus"
+        app:layout_constraintTop_toBottomOf="@+id/title_collections" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/create_collections">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/title_interesting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/interesting"
+        android:textSize="18sp"
+        android:textColor="@color/title_black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_collection" />
+    <TextView
+        android:id="@+id/all_interesting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:text="@string/all"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/title_interesting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/title_interesting" />
+        <ImageView
+            android:id="@+id/button_all_two"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="28dp"
+            android:src="@drawable/chevron_right_24px"
+            app:layout_constraintBottom_toBottomOf="@+id/all_interesting"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/all_interesting" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_interesting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="16dp"
+            android:paddingBottom="70dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_interesting">
+        </androidx.recyclerview.widget.RecyclerView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

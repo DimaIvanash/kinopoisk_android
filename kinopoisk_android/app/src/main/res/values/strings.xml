@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Cinema</string>
+    <string name="premiers">Премьеры</string>
+    <string name="all">Все</string>
+    <string name="popular">Популярное</string>
+    <string name="top_250">Топ-250</string>
+    <string name="serial">Сериалы</string>
+    <string name="rating">6.5</string>
+    <string name="year_2020">2020</string>
+    <string name="genre">фантастика</string>
+    <string name="film_was_shot">В фильме снимались</string>
+    <string name="title_film_job">Над фильмом работали</string>
+    <string name="Gallery">Галерея</string>
+    <string name="similar_films">Похожие фильмы</string>
+    <string name="best">Лучшее</string>
+    <string name="filmography">Фильмография</string>
+    <string name="count_films">%s фильма</string>
+    <string name="to_the_list">К списку</string>
+    <string name="actor_name">Кристинка Асмус</string>
+    <string name="gallery">Галерея</string>
+    <string name="frames">Кадры %S</string>
+    <string name="from_filming">Со съемок %s</string>
+    <string name="posters">Постеры %s</string>
+    <string name="search_not_finder">К сожалению, по вашему запросу ничего не найдено</string>
+    <string name="settings_search">Настройки поиска</string>
+    <string name="show">Показывать</string>
+    <string name="films">Фильмы</string>
+    <string name="sorted">Сортировать</string>
+    <string name="date">Дата</string>
+    <string name="populare">Популярность</string>
+    <string name="rating_search">Рэйтинг</string>
+    <string name="on_viewed">Не просмотрен</string>
+    <string name="country">Страна</string>
+    <string name="choose">Выбрать</string>
+    <string name="_1980_2024">1980 - 2024</string>
+    <string name="by_value">  по %s</string>
+    <string name="width_value">с %s </string>
+    <string name="collections">Коллекции</string>
+    <string name="create_collection">Создать свою коллекцию</string>
+    <string name="favorite">Любимые</string>
+    <string name="watch">Хочу посмотреть</string>
+    <string name="viewed">Просмотренно</string>
+    <string name="add_collection">Добавить в коллекцию</string>
+    <string name="add_new_collection">Создать свою коллекцию</string>
+    <string name="add_name_collection">Введите название вашей новой коллекции </string>
+    <string name="done">Готово</string>
+    <string name="interesting">Вам было интересно</string>
+    <string name="clean_history">Очистить историю</string>
+    <string name="dramas">Драмы</string>
+    <string name="drama">драма</string>
+    <string name="adventures">Приключения</string>
+    <string name="thrillers">Триллеры</string>
+    <string name="thriller">Триллер</string>
+    <string name="melodrama">Мелодрама</string>
+    <string name="crime">Криминал</string>
+    <string name="usa">США</string>
+    <string name="russia">Россия</string>
+    <string name="france">Франция</string>
+    <string name="switzerland">Швейцария</string>
+    <string name="of_russia">России</string>
+    <string name="of_france">Франции</string>
+    <string name="of_switzerland">Швейцарии</string>
+    <string name="of_poland">Польши</string>
+    <string name="poland">Польша</string>
+    <string name="great_britain">Великобритания</string>
+    <string name="of_great_britain">Великобритании</string>
+    <string name="hour"> ч </string>
+    <string name="minutes"> мин </string>
+    <string name="season">%s сезон</string>
+    <string name="series">%s серий</string>
+
+
+    <string-array name="rangeSliderValues">
+        <item>0</item>
+        <item>10</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="viewed_all">Показать все</string>
+    <string name="actor">Актер %s</string>
+    <string name="produsser">Продюссер %s</string>
+    <string name="director">Директор %s</string>
+    <string name="miss">пропустить</string>
+    <string name="about_the_premieres">Узнавай о премьерах</string>
+    <string name="board_create_collection">Создавай коллекции</string>
+    <string name="frend">Делитесь с друзьями</string>
+</resources>

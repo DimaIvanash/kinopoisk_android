@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="111dp"
+    android:layout_height="222dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp">
+
+    <ImageView
+        android:id="@+id/image_page"
+        android:layout_width="111dp"
+        android:layout_height="156dp"
+        android:background="@color/grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/eye"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/visibility_24px"
+        android:visibility="invisible"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rating_container"
+        android:layout_width="17dp"
+        android:layout_height="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/shape" >
+
+        <TextView
+            android:id="@+id/similar_rating"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:text="6.7"
+            android:textSize="7sp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/title_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:lines="2"
+        android:ellipsize="end"
+        android:text="текст"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/subtitle_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_page" />
+    <TextView
+        android:id="@+id/subtitle_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="драма"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="2dp"
+        android:textSize="12sp"
+        android:padding="2dp"
+        android:textColor="@color/grey_subtitle"
+        />
+
+    <ImageButton
+        android:id="@+id/viewed_button"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:background="@drawable/shape_last_button"
+        android:elevation="10dp"
+        android:layout_marginStart="10dp"
+        android:shadowColor="@color/black"
+        android:src="@drawable/trending_flat_24px"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/image_page"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_clear"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="@string/viewed_all"
+        android:visibility="invisible"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/viewed_button"
+        app:layout_constraintStart_toStartOf="@+id/viewed_button"
+        app:layout_constraintTop_toBottomOf="@+id/viewed_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
