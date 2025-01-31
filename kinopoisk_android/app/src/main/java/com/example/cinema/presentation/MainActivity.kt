@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity(),BottomNavigationView.OnNavigationItemSe
         setContentView(R.layout.activity_main)
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
         bottomNavigationView.setOnNavigationItemSelectedListener ( this )
+
     }
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {

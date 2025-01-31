@@ -10,6 +10,7 @@ import com.example.cinema.R
 import com.example.cinema.databinding.FragmentOnboardingThreeBinding
 import com.example.cinema.presentation.onboarding.SplashFragment.Companion.FINISHED
 import com.example.cinema.presentation.onboarding.SplashFragment.Companion.ONBOARDING
+
 class ThirdFragment : Fragment() {
     private var _binding : FragmentOnboardingThreeBinding? = null
     private val binding get() = _binding!!
@@ -24,7 +25,7 @@ class ThirdFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.container.setOnClickListener {
             addPref()
-            findNavController().navigate(R.id.action_onboardingFragment_to_homePageFragment)
+            findNavController().navigate(R.id.action_thirdFragment_to_homePageFragment)
         }
     }
     private fun addPref()

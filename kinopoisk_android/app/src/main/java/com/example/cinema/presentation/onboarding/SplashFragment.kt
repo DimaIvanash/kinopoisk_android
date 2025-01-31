@@ -19,7 +19,6 @@ class SplashFragment : Fragment() {
     private var _binding : FragmentSplashBinding? = null
     private val binding get() = _binding!!
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -42,11 +41,8 @@ class SplashFragment : Fragment() {
         val sharedPreference = requireActivity().getSharedPreferences(ONBOARDING, Context.MODE_PRIVATE)
         return sharedPreference.getBoolean(FINISHED, false)
     }
-
     override fun onDestroy() {
         super.onDestroy()
         _binding = null
     }
-
-
 }

@@ -29,7 +29,6 @@ class OnboardingFragment : Fragment() {
         binding.viewPager2.adapter = onBoardingAdapter
 
     }
-
     override fun onDestroy() {
         super.onDestroy()
         _binding = null

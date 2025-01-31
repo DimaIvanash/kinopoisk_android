@@ -226,6 +226,9 @@
         <action
             android:id="@+id/action_onboardingFragment_to_homePageFragment"
             app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_onboardingFragment_to_splashFragment"
+            app:destination="@id/splashFragment" />
     </fragment>
     <fragment
         android:id="@+id/splashFragment"
@@ -251,6 +254,9 @@
         <action
             android:id="@+id/action_firstFragment_to_splashFragment"
             app:destination="@id/splashFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
@@ -267,5 +273,8 @@
         <action
             android:id="@+id/action_thirdFragment_to_splashFragment"
             app:destination="@id/splashFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
     </fragment>
 </navigation>
